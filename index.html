@@ -9,270 +9,303 @@
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5FDX4Q7');</script>
 </head>
 <body>
-  <div class="main-wrapper">
-    <header class="header header--bg">
-      <div class="container">
-        <nav class="navbar">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span> 
-            </button>
-            <div>
-              <!-- icona da rivedere -->
-              <a class="navbar-brand" href="#"><img  id="logo" src="assets/images/eversport2.jpg">Eversports Manager</a>
-            </div>
-          
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="#">GET YOUR DEMO</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">ABOUT US</a></li> 
-              <li><a href="#">CONTACT</a></li> 
-            </ul>
-          </div>
-        </nav>
-        <div class="header__content text-center">
-          <h1 class="header__content__title">Eversports Manager</h1>
-          <p class="header__content__paragraph">Enabling studios and sport centers to work smarter</p>
-          <a class="button button--margin-right button--hover" href="#">LARN MORE</a>
-          <a class="button button--hover" href="#" >GET YOUR DEMO</a>
-        </div>
-      </div>
-    </header>
-    
-    <section class="service">
-      <div class="container">
-        <div class="page-section text-center">
-          <h2 class="page-section__title">SERVICES WE OFFER</h2>
-          <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">trending_up</i>
-                <h4 class="service__title">Growing Business</h4>
-                <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">access_time</i>
-                <h4 class="service__title">Save Time</h4>
-                <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <i class="material-icons">group</i>
-                <h4 class="service__title">Free Support</h4>
-                <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    <section class="about">
-      <div class="container">
-        <div class="page-section">
-          <div class="text-center">
-            <h2 class="page-section__title">ABOUT EVERSPORTS</h2>
-            <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-          <div class="row gutters-50">
-            <div class="about--narrow">
-              <div class="col-md-6">
-                <img class="img-responsive" src="assets/images/about.jpg" alt="">
-              </div>
-              <div class="col-md-6 about__extra-padding">
-                <h3 class="about__content-title">We Believe In<br>Management made simple</h3>
-                <p class="about__content-paragraph">
-                    It all started in Vienna, Austria, back in 2013: Our founder and CEO, Hanno Lippitsch, was a national volleyball player who wanted to play tennis. While browsing the net searching for tennis courts, Hanno realised how difficult it was to book a location and a time slot.
-                  In the era of digitalisation where people book and pay for flights, taxis or hotels within a few mouse clicks, the sports industry was still lacking an online solution to manage its business and ease its clients’ lives
-                    So Hanno set his goal to provide professionals and business owners with a modern software tool to manage and run their business. And on the same hand we also want to offer sport lovers a great way to book their activities anywhere, anytime, from their phone, tablet or computer.
-                    
-                    Today Eversports provides its management software to more than 2500 business owners in 8 different countries. Whether you run a yoga studio, gym or a tennis club, Eversports gives you the best tools to manage your business in a smart way and brings your marketing strategy to the next level in a digitalised world.</p>
-                  <a class="button--light" href="#">READ MORE</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      
-      <!-- section with the modal video -->
-      
-     
-      <div class="container">
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+    <div id="app">
+      <div class="main-wrapper">
+        <header class="header header--bg">
+          <div class="container">
+            <nav class="navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
                 </button>
-                
-                <div class="embed-responsive embed-responsive-16by9">
-                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EBQuJrdcHE0" frameborder="0" allowfullscreen="" id="video"  allowscriptaccess="always"></iframe>
+                <div>
+                  
+                  <a class="navbar-brand" href="#"><img  id="logo" src="assets/images/eversport2.jpg">Eversports Manager</a>
                 </div>
+              
               </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav pull-right">
+                  <li id="demo" v-on:click="analyticTriggers" v-bind:data-toggle="dataToggle" v-bind:data-target="dataTarget"><a href="#">GET YOUR DEMO</a></li>
+                  <li><a href="https://www.eversportsmanager.com/">SERVICES</a></li>
+                  <li><a href="https://www.eversportsmanager.com/">ABOUT US</a></li> 
+                  <li><a href="https://www.eversportsmanager.com/">CONTACT</a></li> 
+                
+                </ul>
+              </div>
+            </nav>
+            <div class="header__content text-center">
+              <h1 class="header__content__title">Eversports Manager</h1>
+              <p class="header__content__paragraph">Enabling studios and sport centers to work smarter</p>
+              <a class="button button--margin-right button--hover" href="https://www.eversportsmanager.com/">LARN MORE</a>
+              <a id="demo" v-on:click="analyticTriggers" class="button button--hover" href="#" v-bind:data-toggle="dataToggle" v-bind:data-target="dataTarget">GET YOUR DEMO</a>
             </div>
           </div>
-        </div>
-      </div>
-
-
-         <!-- ///section with the modal video -->
-      
-      <section class="video-section video-section--bg">
-        <div class="container">
-          <div class="page-section page-section--large text-center">
-            <button class="video-section__icon" data-toggle="modal" data-target="#myModal"><img src="assets/images/video-icon.png" alt=""></button>
-          </div>
-        </div>
-      </section>
-      
-   
-      
-      <div class="container">
-        <section class="price">
-          <div class="page-section page-section--small text-center">
-            <h2 class="page-section__title">OUR PRICING</h2>
-            <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <div class="price__panel-wrapper">
-              <div class="row gutters-50">
+        </header>
+        
+        <section class="service">
+          <div class="container">
+            <div class="page-section text-center">
+              <h2 class="page-section__title">SERVICES WE OFFER</h2>
+              <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <div class="row gutters-40">
                 <div class="col-md-4">
-                  <div class="panel text-center">
-                    <div class="panel-heading">
-                      <h4 class="price__title">SILVER</h4>
-                      <h1 class="price__ammount">&#36;<span class="price__ammount--number">159</span> &#47;Year</h1>
-                    </div>
-                    <div class="panel-body">
-                      <p>Up To 5 user</p>
-                      <p>Max. 100 iteam/month</p>
-                      <p>Unlimited queries</p>
-                      <p>Full statistics</p>
-                    </div>
-                    <div>
-                      <a class="panel__button" href="#">GET THIS PLAN</a>
-                    </div>
+                  <div class="thumbnail">
+                    <i class="material-icons">trending_up</i>
+                    <h4 class="service__title">Growing Business</h4>
+                    <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="panel text-center">
-                    <div class="panel-heading">
-                      <h4 class="price__title">GOLD</h4>
-                      <h1 class="price__ammount">&#36; <span class="price__ammount--number">249</span> &#47;Year</h1>
-                    </div>
-                    <div class="panel-body">
-                      <p>Up To 10 user</p>
-                      <p>Max. 200 iteam/month</p>
-                      <p>Unlimited queries</p>
-                      <p>Full statistics</p>
-                    </div>
-                    <div>
-                      <a class="panel__button" href="#">GET THIS PLAN</a>
-                    </div>
+                  <div class="thumbnail">
+                    <i class="material-icons">access_time</i>
+                    <h4 class="service__title">Save Time</h4>
+                    <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="panel text-center">
-                    <div class="panel-heading">
-                      <h4 class="price__title">PLATINUM</h4>
-                      <h1 class="price__ammount">&#36; <span class="price__ammount--number">459</span> &#47;Year</h1>
-                    </div>
-                    <div class="panel-body">
-                      <p>Up To 5 user</p>
-                      <p>Unlimited iteam</p>
-                      <p>Unlimited queries</p>
-                      <p>Full statistics</p>
-                    </div>
-                    <div>
-                      <a class="panel__button" href="#">GET THIS PLAN</a>
-                    </div>
+                  <div class="thumbnail">
+                    <i class="material-icons">group</i>
+                    <h4 class="service__title">Free Support</h4>
+                    <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
-    
-      <div class="container">
-       <footer class="footer footer--bg">
-        <div class="container">
-          <div class="page-section">
-            <div class="row gutters-100">
-              <div class="col-md-4 col-lg-3">
-                <div class="footer__first">
-                  <h2 class="footer__title">EVERSPORTS</h2>
-                  <p class="footer-first__paragraph">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
-                  <ul class="footer-first__social-icons">
-                    <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
-                    <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
-                  </ul>
-                </div>
+        
+        
+        
+        <section id="about" class="about">
+          <div class="container">
+            <div class="page-section">
+              <div class="text-center">
+                <h2 class="page-section__title">ABOUT EVERSPORTS</h2>
+                <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
-              <div class="col-md-6 col-lg-2">
-                <div class="footer__second">
-                  <h2 class="footer__title">QUICK LINK</h2>
-                  <ul>
-                    <li><a href="#">Get Your Demo</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="footer__third">
-                  <h2 class="footer__title">CONTACT US</h2>
-                  <ul>
-                    <li><span class="glyphicon glyphicon-envelope"></span> <a href="#">info@everspots.com</a></li>
-                    <li><span class="glyphicon glyphicon-earphone"></span> <a href="#">+4407340236493</a></li>
-                  </ul>
-                  <h4 class="footer__subscribe__title">Subscribe</h4>
-                  <div class="subscribe-section">
-                    <input type="email" class="form-control" size="50" placeholder="Enter Your Email" required>
-                    <button class="subscribe-section__button" type="button"><img src="assets/images/send-icon.png" alt=""></button>
+              <div class="row gutters-50">
+                <div class="about--narrow">
+                  <div class="col-md-6">
+                    <img class="img-responsive" src="assets/images/about.jpg" alt="">
+                  </div>
+                  <div class="col-md-6 about__extra-padding">
+                    <h3 class="about__content-title">We Believe In<br>Management made simple</h3>
+                    <p class="about__content-paragraph">{{aboutText}}</p>
+                      <a id="info" v-on:click="analyticTriggers" class="button--light" href="https://www.eversportsmanager.com/">READ MORE</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              
             </div>
-            <hr class="footer__horizontal-bar">
-            <p class="footer__bottom-paragraph">&copy; Copyright 2020 <a href="#" style="color: #00aafe;font-weight:bold;">Lorenzo Lando</a>. All Rights Reserved</p>
+        
+          </section>
+          
+          <!-- section with the modal video -->
+          
+         
+          <div class="container">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                    <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EBQuJrdcHE0" frameborder="0" allowfullscreen="" id="video"  allowscriptaccess="always"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+             <!-- ///section with the modal video -->
+          
+          <section class="video-section video-section--bg">
+            <div class="container">
+              <div class="page-section page-section--large text-center">
+                <button  v-on:click="analyticTriggers" class="video-section__icon" data-toggle="modal" data-target="#myModal"><img id="videoClick" src="assets/images/video-icon.png" alt=""></button>
+              </div>
+            </div>
+          </section>
+          
+        
+          
+          <div class="container">
+            <section class="price">
+              <div class="page-section page-section--small text-center">
+                <h2 class="page-section__title">OUR PRICING</h2>
+                <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div class="price__panel-wrapper">
+                  <div class="row gutters-50">
+                    <div class="col-md-4">
+                      <div class="panel text-center">
+                        <div class="panel-heading">
+                          <h4 class="price__title">SILVER</h4>
+                          <h1 class="price__ammount"><span class="price__ammount--number">159</span> &#47;Year</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p>Up To 5 user</p>
+                          <p>Max. 100 iteam/month</p>
+                          <p>Unlimited queries</p>
+                          <p>Full statistics</p>
+                        </div>
+                        <div>
+                          <a  id="silverPack" v-on:click="analyticTriggers" class="panel__button" href="#">GET THE SILVER PLAN</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="panel text-center">
+                        <div class="panel-heading">
+                          <h4 class="price__title">GOLD</h4>
+                          <h1 class="price__ammount"><span class="price__ammount--number">249</span> &#47;Year</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p>Up To 10 user</p>
+                          <p>Max. 200 iteam/month</p>
+                          <p>Unlimited queries</p>
+                          <p>Full statistics</p>
+                        </div>
+                        <div>
+                          <a  id="goldPack" v-on:click="analyticTriggers" class="panel__button" href="#">GET THE GOLD PLAN</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="panel text-center">
+                        <div class="panel-heading">
+                          <h4 class="price__title">PLATINUM</h4>
+                          <h1 class="price__ammount"><span class="price__ammount--number">459</span> &#47;Year</h1>
+                        </div>
+                        <div class="panel-body">
+                          <p>Up To 5 user</p>
+                          <p>Unlimited iteam</p>
+                          <p>Unlimited queries</p>
+                          <p>Full statistics</p>
+                        </div>
+                        <div>
+                          <a id="platinumPack" v-on:click="analyticTriggers" class="panel__button" href="#">GET THE PLATINUM PLAN</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        
+          <div class="container">
+           <footer  class="footer footer--bg">
+            <div class="container">
+              <div class="page-section">
+                <div class="row gutters-100">
+                  <div class="col-md-4 col-lg-3">
+                    <div class="footer__first">
+                      <h2 class="footer__title">EVERSPORTS</h2>
+                      <p class="footer-first__paragraph">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+                      <ul class="footer-first__social-icons">
+                        <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+                        <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-2">
+                    <div class="footer__second">
+                      <h2 class="footer__title">QUICK LINK</h2>
+                      <ul>
+                        <li v-on:click="analyticTriggers" v-bind:data-toggle="dataToggle" v-bind:data-target="dataTarget"><a href="#">Get Your Demo</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="footer__third">
+                      <h2 class="footer__title">CONTACT US</h2>
+                      <ul>
+                        <li v-on:click="analyticTriggers"><span class="glyphicon glyphicon-envelope"></span> <a id="mail" href="mailto:info@everspots.com">info@everspots.com</a></li>
+                        <li  v-on:click="analyticTriggers"><span class="glyphicon glyphicon-earphone"></span> <a id="phone" href="tel:+4407340236493">+4407340236493</a></li>
+                      </ul>
+                      <h4 class="footer__subscribe__title">Subscribe</h4>
+                      <div class="subscribe-section">
+                        <input type="email" class="form-control" size="50" placeholder="Enter Your Email" required>
+                        <button class="subscribe-section__button" type="button"><img src="assets/images/send-icon.png" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <hr class="footer__horizontal-bar">
+                <p class="footer__bottom-paragraph">&copy; Copyright 2020 <a href="#" style="color: #00aafe;font-weight:bold;">Lorenzo Lando</a>. All Rights Reserved</p>
+              </div>
+            </div>
+          </footer>
+
+      <!-- modal form code -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <h1>Try Us!</h1>
+            <h4>Submit the form we`ll keep in touch :)</h4>
+            <form id="formModal">
+              <div class="form-group">
+                  <label for="inputEmail">Email:</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                  <label for="inputPassword">City:</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+              <div class="form-group">
+                  <label class="form-check-label"><input type="checkbox"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+            
           </div>
         </div>
-      </footer>
-  </div>
-  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      </div>
+<!-- end modal form code -->
+        </div>
+    </div>
 
-  <script>
-    $(document).ready(function() {
+  
 
-      var $videoSrc = $("#video").attr("src");
+      <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+      <script src="temp/Javascript/app.js"></script>
+      <script>
+          $(document).ready(function() {
 
-      $('#myModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src',$videoSrc); 
-      });
+            var $videoSrc = $("#video").attr("src");
+
+            $('#myModal').on('hide.bs.modal', function (e) {
+              $("#video").attr('src',$videoSrc); 
+            });
 
 
 
-    });
-  </script>
+          });
+        </script>
 </body>
 </html>
 
