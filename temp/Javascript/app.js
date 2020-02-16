@@ -13,12 +13,41 @@ Today Eversports provides its management software to more than 2500 business own
     methods:{
       analyticTriggers : function(event){
         let identifier = event.target.id;
-        console.log(identifier);
+       
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-        'event': identifier,
-        'formLocation': 'footer'
+        'event': identifier
         });
+        
+        
+        if(identifier.includes('Pack')){
+            var contract =  0;
+            if(identifier.includes('silver')){
+                contract = 1;
+            } else if(identifier.includes('gold')) {
+                contract = 2;
+            } else {
+                contract = 3;
+            }
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+             'event': 'fireRemarketingTag',
+             'google_tag_params': {
+                  'ecomm_prodid': contract
+            }
+         });
+          
+        }
+      },
+      formSubmit: function(event){
+        document.querySelector('#formModal').addEventListener('submit', () => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+            'event': 'formSubmitted'
+            
+            });
+        });
+        
       }
     },
     computed:{
