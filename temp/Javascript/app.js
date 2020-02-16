@@ -13,12 +13,12 @@ Today Eversports provides its management software to more than 2500 business own
     methods:{
       analyticTriggers : function(event){
         let identifier = event.target.id;
-       
+       console.log(identifier);
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
         'event': identifier
         });
-        
+
         
         if(identifier.includes('Pack')){
             var contract =  0;
