@@ -276,6 +276,12 @@ button:focus{
         color: #fff;
       }
 
+#service{
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .service__title{
     font-size: 22px;
     font-weight: bold;
